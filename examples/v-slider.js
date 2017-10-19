@@ -1,6 +1,6 @@
-webpackJsonp([4],{
+webpackJsonp([1],{
 
-/***/ 28:
+/***/ 31:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* eslint react/no-multi-comp: 0 */
@@ -10,7 +10,8 @@ var React = __webpack_require__(1);
 var ReactDOM = __webpack_require__(4);
 var Slider = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"rc-slider\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
-var style = { width: 400, margin: 50 };
+var style = { float: 'left', width: 200, height: 400, marginBottom: 160, marginLeft: 50 };
+var parentStyle = { overflow: 'hidden' };
 
 function log(value) {
   console.log(value);
@@ -33,13 +34,8 @@ var CustomizedSlider = React.createClass({
       value: value
     });
   },
-  onAfterChange: function onAfterChange(value) {
-    console.log(value);
-  },
   render: function render() {
-    return React.createElement(Slider, { value: this.state.value,
-      onChange: this.onSliderChange, onAfterChange: this.onAfterChange
-    });
+    return React.createElement(Slider, { vertical: true, value: this.state.value, onChange: this.onSliderChange });
   }
 });
 
@@ -67,7 +63,15 @@ var DynamicBounds = React.createClass({
   render: function render() {
     return React.createElement(
       'div',
-      null,
+      { style: style },
+      React.createElement(
+        'p',
+        null,
+        'Slider with dynamic `min` `max`'
+      ),
+      React.createElement(Slider, { vertical: true, defaultValue: 50, min: this.state.min, max: this.state.max,
+        onChange: this.onSliderChange
+      }),
       React.createElement(
         'label',
         null,
@@ -80,19 +84,14 @@ var DynamicBounds = React.createClass({
         null,
         'Max: '
       ),
-      React.createElement('input', { type: 'number', value: this.state.max, onChange: this.onMaxChange }),
-      React.createElement('br', null),
-      React.createElement('br', null),
-      React.createElement(Slider, { defaultValue: 50, min: this.state.min, max: this.state.max,
-        onChange: this.onSliderChange
-      })
+      React.createElement('input', { type: 'number', value: this.state.max, onChange: this.onMaxChange })
     );
   }
 });
 
 ReactDOM.render(React.createElement(
   'div',
-  null,
+  { style: parentStyle },
   React.createElement(
     'div',
     { style: style },
@@ -101,7 +100,7 @@ ReactDOM.render(React.createElement(
       null,
       'Basic Slider'
     ),
-    React.createElement(Slider, { tipTransitionName: 'rc-slider-tooltip-zoom-down', onChange: log })
+    React.createElement(Slider, { vertical: true, tipTransitionName: 'rc-slider-tooltip-zoom-down', onChange: log })
   ),
   React.createElement(
     'div',
@@ -111,7 +110,7 @@ ReactDOM.render(React.createElement(
       null,
       'Basic Slider\uFF0C`step=20`'
     ),
-    React.createElement(Slider, { step: 20, defaultValue: 50, onBeforeChange: log })
+    React.createElement(Slider, { vertical: true, step: 20, defaultValue: 50, onBeforeChange: log })
   ),
   React.createElement(
     'div',
@@ -121,7 +120,7 @@ ReactDOM.render(React.createElement(
       null,
       'Basic Slider\uFF0C`step=20, dots`'
     ),
-    React.createElement(Slider, { dots: true, step: 20, defaultValue: 100, onAfterChange: log })
+    React.createElement(Slider, { vertical: true, dots: true, step: 20, defaultValue: 100, onAfterChange: log })
   ),
   React.createElement(
     'div',
@@ -131,7 +130,7 @@ ReactDOM.render(React.createElement(
       null,
       'Basic Slider with `tipFormatter`'
     ),
-    React.createElement(Slider, { tipFormatter: percentFormatter,
+    React.createElement(Slider, { vertical: true, tipFormatter: percentFormatter,
       tipTransitionName: 'rc-slider-tooltip-zoom-down', onChange: log
     })
   ),
@@ -143,7 +142,7 @@ ReactDOM.render(React.createElement(
       null,
       'Basic Slider without tooltip'
     ),
-    React.createElement(Slider, { tipFormatter: null, onChange: log })
+    React.createElement(Slider, { vertical: true, tipFormatter: null, onChange: log })
   ),
   React.createElement(
     'div',
@@ -153,7 +152,7 @@ ReactDOM.render(React.createElement(
       null,
       'Controlled Slider'
     ),
-    React.createElement(Slider, { value: 50 })
+    React.createElement(Slider, { vertical: true, value: 50 })
   ),
   React.createElement(
     'div',
@@ -167,25 +166,20 @@ ReactDOM.render(React.createElement(
   ),
   React.createElement(
     'div',
-    { style: style },
-    React.createElement(
-      'p',
-      null,
-      'Slider with dynamic `min` `max`'
-    ),
+    null,
     React.createElement(DynamicBounds, null)
   )
 ), document.getElementById('__react-content'));
 
 /***/ }),
 
-/***/ 79:
+/***/ 82:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(28);
+module.exports = __webpack_require__(31);
 
 
 /***/ })
 
-},[79]);
-//# sourceMappingURL=slider.js.map
+},[82]);
+//# sourceMappingURL=v-slider.js.map

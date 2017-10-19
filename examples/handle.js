@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 
-import 'rc-slider/assets/index.less';
-import 'rc-tooltip/assets/bootstrap.css';
+import 'rc-slider-es6/assets/index.less';
+import 'rc-tooltip-es6/assets/bootstrap.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Tooltip from 'rc-tooltip';
-import Slider from 'rc-slider';
+import Tooltip from 'rc-tooltip-es6';
+import Slider from 'rc-slider-es6';
 
 const createSliderWithTooltip = Slider.createSliderWithTooltip;
 const Range = createSliderWithTooltip(Slider.Range);

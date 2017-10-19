@@ -1,8 +1,8 @@
-import 'rc-slider/assets/index.less';
+import 'rc-slider-es6/assets/index.less';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Slider from 'rc-slider';
+import Slider from 'rc-slider-es6';
 
 const style = { float: 'left', width: 160, height: 400, marginBottom: 160, marginLeft: 50 };
 const parentStyle = { overflow: 'hidden' };

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Tooltip from '../node_modules/rc-tooltip-es6';
+import Tooltip from 'rc-tooltip-es6';
 import Handle from './Handle';
 
 export default function createSliderWithTooltip(Component) {

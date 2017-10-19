@@ -1,21 +1,21 @@
 webpackJsonp([2],{
 
-/***/ 188:
+/***/ 153:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(83);
+module.exports = __webpack_require__(74);
 
 
 /***/ }),
 
-/***/ 83:
+/***/ 74:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(19);
+__webpack_require__(12);
 
 var React = __webpack_require__(0);
-var ReactDOM = __webpack_require__(1);
-var Slider = __webpack_require__(15);
+var ReactDOM = __webpack_require__(4);
+var Slider = __webpack_require__(8);
 
 var style = { float: 'left', width: 160, height: 400, marginBottom: 160, marginLeft: 50 };
 var parentStyle = { overflow: 'hidden' };
@@ -115,5 +115,5 @@ ReactDOM.render(React.createElement(
 
 /***/ })
 
-},[188]);
+},[153]);
 //# sourceMappingURL=v-marks.js.map

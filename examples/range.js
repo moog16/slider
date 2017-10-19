@@ -1,22 +1,22 @@
 webpackJsonp([4],{
 
-/***/ 186:
+/***/ 151:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(81);
+module.exports = __webpack_require__(72);
 
 
 /***/ }),
 
-/***/ 81:
+/***/ 72:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* eslint react/no-multi-comp: 0 */
-__webpack_require__(19);
+__webpack_require__(12);
 
 var React = __webpack_require__(0);
-var ReactDOM = __webpack_require__(1);
-var Slider = __webpack_require__(15);
+var ReactDOM = __webpack_require__(4);
+var Slider = __webpack_require__(8);
 
 var style = { width: 400, margin: 50 };
 
@@ -206,5 +206,5 @@ ReactDOM.render(React.createElement(
 
 /***/ })
 
-},[186]);
+},[151]);
 //# sourceMappingURL=range.js.map

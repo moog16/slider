@@ -1,22 +1,22 @@
 webpackJsonp([0],{
 
-/***/ 190:
+/***/ 155:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(85);
+module.exports = __webpack_require__(76);
 
 
 /***/ }),
 
-/***/ 85:
+/***/ 76:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* eslint react/no-multi-comp: 0 */
-__webpack_require__(19);
+__webpack_require__(12);
 
 var React = __webpack_require__(0);
-var ReactDOM = __webpack_require__(1);
-var Slider = __webpack_require__(15);
+var ReactDOM = __webpack_require__(4);
+var Slider = __webpack_require__(8);
 
 var style = { float: 'left', width: 200, height: 400, marginBottom: 160, marginLeft: 50 };
 var parentStyle = { overflow: 'hidden' };
@@ -181,5 +181,5 @@ ReactDOM.render(React.createElement(
 
 /***/ })
 
-},[190]);
+},[155]);
 //# sourceMappingURL=v-slider.js.map

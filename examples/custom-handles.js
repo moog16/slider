@@ -1,26 +1,26 @@
 webpackJsonp([6],{
 
-/***/ 184:
+/***/ 149:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(79);
+module.exports = __webpack_require__(70);
 
 
 /***/ }),
 
-/***/ 79:
+/***/ 70:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__);
 
-__webpack_require__(19);
+__webpack_require__(12);
 
 var React = __webpack_require__(0);
-var ReactDOM = __webpack_require__(1);
-var Slider = __webpack_require__(15);
+var ReactDOM = __webpack_require__(4);
+var Slider = __webpack_require__(8);
 
 var wrapperStyle = { width: 400, margin: 50 };
 
@@ -82,5 +82,5 @@ ReactDOM.render(React.createElement(
 
 /***/ })
 
-},[184]);
+},[149]);
 //# sourceMappingURL=custom-handles.js.map

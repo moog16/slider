@@ -1,21 +1,21 @@
 webpackJsonp([5],{
 
-/***/ 185:
+/***/ 150:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(80);
+module.exports = __webpack_require__(71);
 
 
 /***/ }),
 
-/***/ 80:
+/***/ 71:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(19);
+__webpack_require__(12);
 
 var React = __webpack_require__(0);
-var ReactDOM = __webpack_require__(1);
-var Slider = __webpack_require__(15);
+var ReactDOM = __webpack_require__(4);
+var Slider = __webpack_require__(8);
 
 var style = { width: 400, margin: 50 };
 var marks = {
@@ -111,5 +111,5 @@ ReactDOM.render(React.createElement(
 
 /***/ })
 
-},[185]);
+},[150]);
 //# sourceMappingURL=marks.js.map

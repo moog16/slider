@@ -1,5 +1,5 @@
 import React from 'react';
-import Tooltip from 'rc-tooltip';
+import Tooltip from 'rc-tooltip-es6';
 
 export default class Handle extends React.Component {
   constructor(props) {

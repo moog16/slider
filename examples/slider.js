@@ -3,7 +3,7 @@ import 'rc-slider-es6/assets/index.less';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Slider, { createSliderWithTooltip } from 'rc-slider-es6';
+import Slider from 'rc-slider-es6';
 
 const style = { width: 600, margin: 50 };
 
@@ -15,8 +15,6 @@ function log(value) {
 function percentFormatter(v) {
   return `${v} %`;
 }
-
-const SliderWithTooltip = createSliderWithTooltip(Slider);
 
 class CustomizedSlider extends React.Component {
   constructor(props) {
@@ -101,11 +99,6 @@ ReactDOM.render(
     </div>
     <div style={style}>
       <p>Slider with tooltip, with custom `tipFormatter`</p>
-      <SliderWithTooltip
-        tipFormatter={percentFormatter}
-        tipProps={{ overlayClassName: 'foo' }}
-        onChange={log}
-      />
     </div>
     <div style={style}>
       <p>Slider with custom handle and track style.<strong>(old api, will be deperacete)</strong></p>
